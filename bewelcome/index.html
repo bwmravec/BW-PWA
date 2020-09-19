@@ -1,298 +1,185 @@
 <html>
-	<head>
-		<title>BeWelcome</title>
-		<meta charset="UTF-8">
-		<style>
-		
-			html, body {
-			  background: black url(bewelc-dash-background.jpg) center center no-repeat;;
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			}
-			
-			.container {
-				height:100%;
-			}
-			
-			table {
-				font-family: sans-serif;
-				color: #FFFFFF;
-				font-weight: bold;
-				font-size: 2.5em;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
-				
-			}
-			
-			table tr {
-			}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bewelcome</title>
+  <link rel="stylesheet" href="../../dist/scss/main.scss">
 
-			table td {
-			}
+</head>
 
-			.button-div {
-				height: 85%;
-				max-width: 85%;
-				margin-left: auto;
-				margin-right: auto;
-			    -webkit-border-radius: 20px;
-			    -moz-border-radius: 20px;
-			    border-radius: 20px;
-			    background-color: rgba(255, 255, 255, 0.5);
-			    color: #000000;
-			    border-color: #000000;
-			}
-			
-			.text-div {
-  				padding: 20% 0% 0% 0%;
-  				
-			}
-			
-			figure {
-				padding-top:5%;
-			}
-			
-			figcaption {
-				color: #000000;
-				padding: 5%;
-				text-align: center;
-			}
-			
-			img {
-				margin-top: 5%;
-    			max-width:50%;
-			}
-			
-			a:link {
-				text-decoration: none;
-			}
-			
-			a:visited {
-				text-decoration: none;
-			}
-			
-			a:hover {
-				text-decoration: none;
-			}
-			
-			a:active {
-				text-decoration: none;
-			}
-			
-			
-			
-			
-			
-			.sidenav {
-				height: 100%;
-				width: 0;
-				position: fixed;
-				z-index: 1;
-				top: 0;
-				left: 0;
-				background-color: #111;
-				overflow-x: hidden;
-				transition: 0.3s;
-				padding-top: 60px;
+<body>
 
-				font-family: sans-serif;
-				color: #FFFFFF;
-				font-weight: bold;
-				font-size: 2.5em;
-			}
-			
-			.sidenav a {
-				padding: 8px 8px 8px 32px;
-				text-decoration: none;
-				color: #818181;
-				display: block;
-				transition: 0.1s;
-				height: 10%;
-			}
-			
-			.sidenav a:hover {
-				color: #f1f1f1;
-			}
-			
-			.sidenav .closebtn {
-				position: absolute;
-				top: 0;
-				right: 25px;
-				font-size: 36px;
-				margin-left: 50px;
-			}
-			
-			#main {
-				transition: margin-left .5s;
-				padding: 16px;
-			}
-			
-			@media screen and (max-height: 100%) {
-				.sidenav {padding-top: 15px;}
-				.sidenav a {}
-			}
-			
-			
-			
-		</style>
-		
-	</head>
-	<body>
-		<div class="container" id="main">
-			<table id="linksTable">
-				<tr>
-					<td>
-						<a href="https://www.bewelcome.org/messages">
-							<div class="button-div">
-								<figure>
-									<img src="messages.png" alt="messages">
-									<figcaption>Messages</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-					<td>
-						<a href="https://www.bewelcome.org/forums">
-							<div class="button-div">
-								<figure>
-									<img src="forum.png" alt="forum">
-									<figcaption>Forum</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://www.bewelcome.org/search/locations">
-							<div class="button-div">
-								<figure>
-									<img src="host-search.png" alt="host search">
-									<figcaption>Host search</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-					<td>
-						<a href="https://www.bewelcome.org/editmyprofile">
-							<div class="button-div">
-								<figure>
-									<img src="profile.png" alt="profile">
-									<figcaption>Profile</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="https://meet.jit.si/BeWelcome-Chat_4MembersVolunteers">
-							<div class="button-div">
-								<figure>
-									<img src="jitsi.png" alt="jitsi">
-									<figcaption>Jitsi</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-					<td>
-						<a href="https://www.bewelcome.org/wiki/App">
-							<div class="button-div">
-								<figure>
-									<img src="about.png" alt="about">
-									<figcaption>About</figcaption>
-								</figure>
-							</div>
-						</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="https://www.bewelcome.org/messages" style="background-color:#FFFFFF;color:#000000"><div style="margin-top:15%">✉️ Messages</div></a>
-			<a href="https://www.bewelcome.org/forums" style="background-color:#FD8824;color:#FFFFFF"><div style="margin-top:15%">👥 Forum</div></a>
-			<a href="https://www.bewelcome.org/search/locations" style="background-color:#3CB6E3;color:#FFFFFF"><div style="margin-top:15%">🏠 Host Search</div></a>
-			<a href="https://www.bewelcome.org/editmyprofile" style="background-color:#969696;color:#FFFFFF"><div style="margin-top:15%">🔰 Profile</div></a>
-			<a href="https://meet.jit.si/BeWelcome-Chat_4MembersVolunteers" style="background-color:#FDBA43;color:#FFFFFF"><div style="margin-top:15%">👨‍👩‍👧‍👦 Jitsi</div></a>
-			<a href="https://www.bewelcome.org/wiki/App" style="background-color:#FFFFFF;color:#000000"><div style="margin-top:15%">ℹ️ About</div></a>
-		</div>
-	</body>
-	<script type="text/javascript">
-		
-		// Resize table if on desktop
-		if (document.body.clientWidth > document.body.clientHeight)
-		{
-			document.getElementById("linksTable").style.width = document.body.clientHeight * 0.9;
-		}
-		
-		
-		// Navigation menu
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "40%";
-		}
-		
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-		}
-		
-		
-		// Swipe gestures
-		document.addEventListener('touchstart', handleTouchStart, false);        
-		document.addEventListener('touchmove', handleTouchMove, false);
-		
-		var xDown = null;                                                        
-		var yDown = null;
-		
-		function getTouches(evt) {
-		  return evt.touches ||             // browser API
-		         evt.originalEvent.touches; // jQuery
-		}                                                     
-		
-		function handleTouchStart(evt) {
-		    const firstTouch = getTouches(evt)[0];                                      
-		    xDown = firstTouch.clientX;                                      
-		    yDown = firstTouch.clientY;                                      
-		};                                                
-		
-		function handleTouchMove(evt) {
-		    if ( ! xDown || ! yDown ) {
-		        return;
-		    }
-		
-		    var xUp = evt.touches[0].clientX;                                    
-		    var yUp = evt.touches[0].clientY;
-		
-		    var xDiff = xDown - xUp;
-		    var yDiff = yDown - yUp;
-		
-		    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-		        if ( xDiff > 0 ) {
-		            /* left swipe */ 
-		        	//alert("left swipe");
-		        	closeNav();
-		        } else {
-		            /* right swipe */
-		        	//alert("right swipe");
-		        	openNav();
-		        }                       
-		    } else {
-		        if ( yDiff > 0 ) {
-		            /* up swipe */ 
-		        	//alert("up swipe");
-		        } else { 
-		            /* down swipe */
-		        	//alert("down swipe");
-		        }                                                                 
-		    }
-		    /* reset values */
-		    xDown = null;
-		    yDown = null;                                             
-		};
-		
-		
-	</script>
+<section>
+
+  <img class="c-bg-image" src="img/alejandro-pinero-amerio-yrQkxFfK0bw-unsplash.jpg">
+
+  <img class="c-sidenav__logo" src="img/logo-bw.png">
+
+  <nav class="c-icons u-mt-72">
+
+
+    <a class="c-icons__element" href="https://www.bewelcome.org/messages">
+      <img class="c-icons__image" src="img/messages.png" alt="messages">
+      <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+        <p class="c-icons__text">Messages</p>
+      </div>
+    </a>
+
+    <a class="c-icons__element" href="https://www.bewelcome.org/forums">
+      <img class="c-icons__image" src="img/forum.png" alt="forum">
+      <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+        <p class="c-icons__text">Forum</p>
+      </div>
+    </a>
+
+    <a class="c-icons__element" href="https://www.bewelcome.org/editmyprofile">
+      <img class="c-icons__image" src="img/profile.png" alt="profile">
+      <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+        <p class="c-icons__text">Profile</p>
+      </div>
+    </a>
+
+    <a class="c-icons__element" href="https://www.bewelcome.org/search/locations">
+      <img class="c-icons__image" src="img/host-search.png" alt="profile">
+      <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+        <p class="c-icons__text">Host-search</p>
+      </div>
+    </a>
+
+    <a class="c-icons__element" href="https://meet.jit.si/BeWelcome-Chat_4MembersVolunteers">
+        <img class="c-icons__image" src="img/jitsi.png" alt="jitsi">
+        <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+          <p class="c-icons__text">Jitsi</p>
+        </div>
+    </a>
+
+    <a class="c-icons__element" href="https://www.bewelcome.org/wiki/App">
+      <img class="c-icons__image" src="img/about.png" alt="about">
+      <div class="u-flex u-justify-center u-items-center u-w-full u-h-full">
+        <p class="c-icons__text">About</p>
+      </div>
+    </a>
+
+  </nav>
+  <div id="mySidenav" class="c-sidenav">
+    <a class="c-sidenav__close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+    </a>
+    <img class="c-sidenav__logo" src="img/logo-bw.png">
+    <a class="c-sidenav__link" href="https://www.bewelcome.org/messages">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/messages-white.png" alt="messages">
+      </div>
+      <p class="u-text-gris-80">Messages</p>
+    </a>
+    <a class="c-sidenav__link" href="https://www.bewelcome.org/forums">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/forum-white.png" alt="forum">
+      </div>
+      <p class="u-text-gris-80">Forum</p>
+    </a>
+    <a class="c-sidenav__link" href="https://www.bewelcome.org/search/locations">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/profile-white.png" alt="profile">
+      </div>
+      <p class="u-text-gris-80">Host Search</p>
+      </a>
+    <a class="c-sidenav__link" href="https://www.bewelcome.org/editmyprofile">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/host-search-white.png" alt="profile">
+      </div>
+      <p class="u-text-gris-80">Profile</p>
+    </a>
+    <a class="c-sidenav__link" href="https://meet.jit.si/BeWelcome-Chat_4MembersVolunteers">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/jitsi-white.png" alt="jitsi">
+      </div>
+      <p class="u-text-gris-80">Jitsi</p>
+  </a>
+    <a class="c-sidenav__link" href="https://www.bewelcome.org/wiki/App">
+      <div class="c-sidenav__image-wrapper">
+        <img class="c-sidenav__image" src="img/about-white.png" alt="about">
+      </div>
+      <p class="u-text-gris-80">About</p>
+    </a>
+  </div>
+</section>
+
+  
+
+
+
+
+<style type="text/css">
+  @charset "UTF-8";:root{--bewelcome:#f37000;--transparent:transparent;--red:#f3000a;--yellow:#f3ea00;--blue:#7000f3;--black:#000;--white:#fff;--gris-5:#f9f9f9;--gris-10:#eee;--gris-15:#ddd;--gris-20:#ccc;--gris-30:#bbb;--gris-40:#999;--gris-50:#808080;--gris-60:#6f6f6f;--gris-65:#595959;--gris-70:#454545;--gris-80:#3F3F3F;--icon-width:192px;--icon-gap:24px}@font-face{font-family:Signika;font-weight:400;font-style:normal;font-display:swap;text-rendering:optimizeLegibility;src:url(fonts/Signika-Regular.eot);src:url(fonts/Signika-Regular.eot) format('embedded-opentype'),url(fonts/Signika-Regular.woff) format('woff'),url(fonts/Signika-Regular.ttf) format('truetype'),url(fonts/Signika-Regular.svg#Signika) format('svg')}@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:Signika;font-weight:400;font-style:normal;text-rendering:optimizeLegibility;font-display:swap;src:url(fonts/Signika-Regular.svg#Signika) format('svg')}}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}figcaption,main,menu,nav,section{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects;text-decoration:none;cursor:pointer}dfn{font-style:italic}img{border-style:none}button,input{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;overflow:visible}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;white-space:normal}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}canvas{display:inline-block}[hidden]{display:none}body,legend,p{margin:0;padding:0}*,:after,:before,html{box-sizing:border-box}body,html{background-color:var(--white);color:var(--gris-90)}a,button,input,legend,p{font-family:Signika;font-size:calc(16 * var(--width));line-height:calc(26 * var(--width))}a,p{display:inline-block;font-weight:400}strong{font-weight:700}a:active,a:focus{outline-style:none}button{text-transform:none;background:0 0;border:0;cursor:pointer;line-height:normal;overflow:visible;padding:0;-webkit-appearance:button;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.c-bg-image{position:fixed;top:0;bottom:0;left:0;right:0;width:100%;height:100%;z-index:0;-o-object-fit:cover;object-fit:cover}.c-icons{position:relative;left:50%;transform:translateX(-50%);display:grid;grid-template-columns:repeat(auto-fit,minmax(var(--icon-width),-webkit-max-content));grid-template-columns:repeat(auto-fit,minmax(var(--icon-width),max-content));grid-gap:var(--icon-gap);justify-content:center;width:calc((var(--icon-width) * 3) + (2 * var(--icon-gap)))}@media screen and (max-width:600px){:root{--icon-width:144px;--icon-gap:16px}.c-icons{width:initial;left:initial;transform:initial;margin:0 16px}}.c-icons__element{display:grid;grid-template-rows:repeat(2,1fr);width:var(--icon-width);height:var(--icon-width);background-color:rgba(255,255,255,.8);padding:16px;border-radius:8px;box-shadow:0 10px 30px -3px var(--gris-80)}.c-icons__element:hover{background-color:rgba(255,255,255,1);box-shadow:0 10px 30px -3px var(--black);transition:background-color .2s,box-shadow .2s}.c-icons__image{position:relative;left:50%;transform:translateX(-50%);width:120px;padding:16px}@media screen and (max-width:600px){.c-icons__image{padding:8px;width:88px}}.c-icons__text{font-size:18px;color:var(--gris-65)}.c-sidenav{left:-240px;width:240px;position:fixed;z-index:2;top:0;bottom:0;background-color:var(--yellow);display:flex;flex-direction:column;padding:72px 16px 16px;overflow-y:scroll}.c-sidenav--open{left:0;box-shadow:0 10px 30px -3px var(--black);transition:left .3s ease-out,box-shadow .3s ease-out}.c-sidenav__link{font-size:20px;margin-bottom:16px;display:flex;align-items:center}.c-sidenav__link:hover{color:var(--gris-60);text-decoration:underline}.c-sidenav__image-wrapper{height:40px;width:40px;border-radius:100%;display:flex;justify-content:center;align-items:center;background-color:rgba(254,139,0,.5);margin-right:8px}.c-sidenav__image{height:24px}.c-sidenav__close{position:absolute;top:8px;right:8px;color:var(--gris-70);width:32px;height:32px;display:flex;justify-content:center;align-items:center;border-radius:100%;background-color:var(--bewelcome);font-size:24px}.c-sidenav__close:hover{background-color:var(--red);transition:background-color .2s}.c-sidenav__logo{position:absolute;top:8px;left:8px;height:32px}.u-flex{display:flex}.u-items-center{align-items:center}.u-justify-center{justify-content:center}.u-h-full{height:100%}.u-mt-72{margin-top:72px}.u-text-gris-80{--text-opacity:1;color:#3f3f3f;color:rgba(63,63,63,var(--text-opacity))}.u-w-full{width:100%}}
+</style>
+
+<script type="text/javascript">
+      
+  
+  // Navigation menu
+  function openNav() {
+    document.getElementById("mySidenav").classList.add("c-sidenav--open")
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").classList.remove("c-sidenav--open")
+  }
+  
+  
+  // Swipe gestures
+  document.addEventListener('touchstart', handleTouchStart, false);        
+  document.addEventListener('touchmove', handleTouchMove, false);
+  
+  var xDown = null;                                                        
+  var yDown = null;
+  
+  function getTouches(evt) {
+    return evt.touches ||             // browser API
+           evt.originalEvent.touches; // jQuery
+  }                                                     
+  
+  function handleTouchStart(evt) {
+      const firstTouch = getTouches(evt)[0];                                      
+      xDown = firstTouch.clientX;                                      
+      yDown = firstTouch.clientY;                                      
+  };                                                
+  
+  function handleTouchMove(evt) {
+      if ( ! xDown || ! yDown ) {
+          return;
+      }
+  
+      var xUp = evt.touches[0].clientX;                                    
+      var yUp = evt.touches[0].clientY;
+  
+      var xDiff = xDown - xUp;
+      var yDiff = yDown - yUp;
+  
+      if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+          if ( xDiff > 0 ) {
+              /* left swipe */ 
+            //alert("left swipe");
+            closeNav();
+          } else {
+              /* right swipe */
+            //alert("right swipe");
+            openNav();
+          }                       
+      } else {
+          if ( yDiff > 0 ) {
+              /* up swipe */ 
+            //alert("up swipe");
+          } else { 
+              /* down swipe */
+            //alert("down swipe");
+          }                                                                 
+      }
+      /* reset values */
+      xDown = null;
+      yDown = null;                                             
+  };
+    
+    
+  </script>
+</body>
 </html>
